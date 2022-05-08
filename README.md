@@ -9,12 +9,12 @@ Install `@mugo-agency/eslint-config`:
 
 **With Yarn**
 ```
-yarn add --dev stylelint @mugo-agency/eslint-config
+yarn add --dev @mugo-agency/eslint-config
 ```
 
 **With npm**
 ```
-npm install stylelint @mugo-agency/eslint-config --save-dev
+npm install @mugo-agency/eslint-config --save-dev
 ```
 
 ## Usage
