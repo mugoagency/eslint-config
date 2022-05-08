@@ -1,45 +1,27 @@
-[![Node.js Package](https://github.com/mugoagency/stylelint-config/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/mugoagency/stylelint-config/actions/workflows/npm-publish.yml)
-# stylelint-config
+[![Node.js Package](https://github.com/mugoagency/eslint-config/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/mugoagency/eslint-config/actions/workflows/npm-publish.yml)
+# eslint-config
 
-Mugo's shareable Stylelint config for use across projects.
+Mugo's shareable svgo config for use across projects.
 
 ## Installation 
 
-Install [stylelint](https://stylelint.io/) and `@mugo-agency/stylelint-config`:
+Install `@mugo-agency/eslint-config`:
 
 **With Yarn**
 ```
-yarn add --dev stylelint @mugo-agency/stylelint-config
+yarn add --dev stylelint @mugo-agency/eslint-config
 ```
 
 **With npm**
 ```
-npm install stylelint @mugo-agency/stylelint-config --save-dev
+npm install stylelint @mugo-agency/eslint-config --save-dev
 ```
-
 
 ## Usage
-Mugo's stylelint rules come bundled in `@mugo-agency/stylelint-config`. To enable these rules, add a `stylelint` property in your `package.json`. See the [stylelint configuration docs](https://stylelint.io/user-guide/configuration/) for more details.
-```
-"stylelint": {
-  "extends": ["@mugo-agency/stylelint-config"]
-}
-```
+Mugo's ESLint config comes bundled in `@mugo-agency/eslint-config`. 
+Add to your `.eslintrc.js`
 
-Now you can run stylelint by adding the following linting script to your `package.json`. See the [stylelint CLI docs](https://stylelint.io/user-guide/cli/) for more details.
 ```
-"scripts": {
-  "stylelint": "stylelint 'src/**/*.scss'"
-}
-```
-Run it:
-
-**With Yarn**
-```
-yarn run stylelint
-```
-
-**With npm**
-```
-npm run stylelint
+const config = require("@mugo-agency/eslint-config");
+module.exports = config;
 ```
