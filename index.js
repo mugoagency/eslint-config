@@ -1,19 +1,26 @@
-module.exports = {
+const config = {
   env: {
     browser: true,
-    node: true,
     es2021: true,
+    node: true,
   },
-  plugins: ["prettier"],
   extends: ["eslint:recommended"],
   parserOptions: {
     ecmaVersion: 12,
     sourceType: "module",
   },
+  plugins: ["sort-keys-fix"],
   rules: {
-    "prettier/prettier": "error",
+    "sort-keys": [
+      "error",
+      "asc",
+      { caseSensitive: true, minKeys: 2, natural: false },
+    ],
+    "sort-keys-fix/sort-keys-fix": "warn",
   },
   settings: {
     "import/no-unresolved": [2, { ignore: ["^https"] }],
   },
 };
+
+module.exports = config;
