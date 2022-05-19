@@ -9,15 +9,8 @@ const config = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins: ["sort-keys-fix"],
-  rules: {
-    "sort-keys": [
-      "error",
-      "asc",
-      { caseSensitive: true, minKeys: 2, natural: false },
-    ],
-    "sort-keys-fix/sort-keys-fix": "warn",
-  },
+  plugins: [],
+  rules: {},
   settings: {
     "import/no-unresolved": [2, { ignore: ["^https"] }],
   },
