@@ -10,7 +10,10 @@ const config = {
     sourceType: "module",
   },
   plugins: [],
-  rules: {},
+  rules: {
+    "no-multiple-empty-lines": [2, {"max": 1, "maxEOF": 1}],
+    "indent": ["error", 2]
+  },
   settings: {
     "import/no-unresolved": [2, { ignore: ["^https"] }],
   },
